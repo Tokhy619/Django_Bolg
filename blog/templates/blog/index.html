@@ -12,7 +12,7 @@
 </head>
 <body>
     <!--Start NavBar-->
-    <header>
+<header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand text-info" href="#">
             <img src= "{% static 'blog/img/logo.png' %}" alt="Blog-logo" width="50px">
@@ -51,11 +51,92 @@
             <button class="btn btn-success ml-1" type="submit">Sign up</button>
         </li>
     </ul>
-  </div>
-</nav>
-    </header>
+    </div>
+    </nav>
+</header>
     <!--End NavBar-->
-    
+<!--Start Content-->
+<section>
+    <div class="container">
+        <div class="row mt-4">
+            <!--Main Content-->
+            <div class="col-md-8">Posts</div>
+            <!--sideBar-->
+            <div class="col-md-4">
+                <!--Posts Side-->
+                <div class="card mt-2">
+                   <div class="card-header bg-dark ">
+                        <h3 class="text-center text-info card-title">New Posts</h3>
+                    </div>
+                   <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Post 1</a>
+                        <a href="#" class="list-group-item list-group-item-action">Post 2</a>
+                        <a href="#" class="list-group-item list-group-item-action">Post 3</a>
+                        <a href="#" class="list-group-item list-group-item-action">Post 4</a>
+                        <a href="#" class="list-group-item list-group-item-action">Post 5</a>
+                   </ul>
+                </div>
+                <!--Comments Side-->
+                <div class="card mt-1 mb-3">
+                    <div class="card-header bg-dark ">
+                        <h3 class="text-center text-info card-title">New Comments</h3>
+                    </div>
+                   <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Comment 1</a>
+                        <a href="#" class="list-group-item list-group-item-action">Comment 2</a>
+                        <a href="#" class="list-group-item list-group-item-action">Comment 3</a>
+                   </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!--End Content-->
+<!--Start Footer-->
+<footer class="bg-dark">
+    <div class="container-fluid">
+        <div class="row"> 
+            <!--start About me-->
+            <div class="col-md">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'blog/img/logo.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">About me</h3>
+                        <p class="card-text">Some quick example text to build on the card title 
+                                                and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <!--end About me-->
+                
+            </div>
+            
+            
+            <div class="col-md">
+                <div class="card">
+                    <h3 class="card-title text-center">References</h3>
+                    <div class="card-body">
+                        <ul>
+                            <a href="#" class="">Comment 1</a>
+                            <a href="#" class="">Comment 2</a>
+                            <a href="#" class="">Comment 3</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--End References-->
+
+        </div>
+
+    <!--CopyRights-->
+        <div class="row p-2">
+            <div class="col-md text-center">
+                <small class="text-light">&copy; All Copyrights <b>Tokhy</b></small>
+            </div>
+        </div>
+    </div>    
+</footer>
+<!--End Footer-->    
     
     
     
