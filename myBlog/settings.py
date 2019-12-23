@@ -122,8 +122,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Add one Static file to all project
-
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    '/home/tokhy/Desktop/blog/blogEnv/Django_Bolg/static',
+     '/home/tokhy/Desktop/blog/blogEnv/Django_Bolg/static',
 ]
