@@ -12,7 +12,7 @@
 </head>
 <body>
     <!--Start NavBar-->
-    <header>
+<header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand text-info" href="#">
             <img src= "{% static 'blog/img/logo.png' %}" alt="Blog-logo" width="50px">
@@ -51,19 +51,109 @@
             <button class="btn btn-success ml-1" type="submit">Sign up</button>
         </li>
     </ul>
-  </div>
-</nav>
-    </header>
+    </div>
+    </nav>
+</header>
     <!--End NavBar-->
-    
-    
-    
+<!--Start Content-->
+<section>
+    <div class="container">
+        <div class="row mt-4">
+            <!--Main Content-->
+            <div class="col-md-8">Posts</div>
+            <!--sideBar-->
+            <div class="col-md-4">
+                <!--Posts Side-->
+                <div class="card mt-2">
+                   <div class="card-header bg-dark ">
+                        <h3 class="text-center text-info card-title">New Posts</h3>
+                    </div>
+                   <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Post 1</a>
+                        <a href="#" class="list-group-item list-group-item-action">Post 2</a>
+                        <a href="#" class="list-group-item list-group-item-action">Post 3</a>
+                        <a href="#" class="list-group-item list-group-item-action">Post 4</a>
+                        <a href="#" class="list-group-item list-group-item-action">Post 5</a>
+                   </ul>
+                </div>
+                <!--Comments Side-->
+                <div class="card mt-1 mb-3">
+                    <div class="card-header bg-dark ">
+                        <h3 class="text-center text-info card-title">New Comments</h3>
+                    </div>
+                   <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Comment 1</a>
+                        <a href="#" class="list-group-item list-group-item-action">Comment 2</a>
+                        <a href="#" class="list-group-item list-group-item-action">Comment 3</a>
+                   </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!--End Content-->
+<!--Start Footer-->
+<footer class="bg-dark">
+    <div class="container-fluid">
+       <div class="row">
+           <div class="col-md">
+               <div class="card-group mt-3">
+            <!--Start About me-->
+        <div class="card m-3">
+            <h3 class="card-title text-dark text-center border-bottom p-2 m-3">About me</h3>
+                <div class="card-body">
+                    <div class="text-center">
+                        <img src="{% static 'blog/img/logo.png' %}" alt="Blog logo" width="100px">
+                    </div>
+                      <p class="text-dark text-center">
+	                I'm Mohamed Full-stack web developer using Django and it's my first project.
+                      </p>
+                     </div>
+                </div>
+            <!--End About me-->
+            <!--Start References-->
+   <div class="card m-3">
+       <h3 class="card-title text-dark text-center border-bottom p-2 m-3">References</h3>
+          <div class="card-body">
+            <ul>
+                <li><a class="text-primary" href="https://www.python.org/doc/">Python</a></li>
+                <li><a class="text-primary" href="https://docs.djangoproject.com/en/2.2/">Django</a></li>
+                <li><a class="text-primary" href="https://developer.mozilla.org/">MDN</a></li>
+            </ul>
+          </div>
+     </div>
+            <!--End References-->
+            <!---Start Social Media-->
+   <div class="card m-3">
+     <h3 class="card-title text-dark text-center border-bottom p-2 m-3">Social Media</h3>
+        <h4 class="card-body text-center">
+           <a class="text-primary" href=""><i class="fab fa-facebook"></i></a>
+           <a class="text-primary" href=""><i class="fab fa-twitter"></i></a>
+           <a class="text-primary" href=""><i class="fab fa-instagram"></i></a>
+           <a class="text-primary" href=""><i class="fab fa-youtube"></i></a>
+           <a class="text-primary" href=""><i class="fab fa-telegram"></i></a>
+           <a class="text-primary" href=""><i class="fab fa-linkedin"></i></a>
+        </h4>
+   </div>
+            <!---End Social Media-->   
+    </div>
+        </div>
+           </div>
+            <!--Start CopyRight-->
+    <div class="row p-2">
+       <div class="col-md text-center">
+          <small class="text-light">&copy; All Rights Reserved / <b>Tokhy</b> \</small>
+       </div>
+    </div>
+            <!---End CopyRight-->
+        </div>
+    </footer>    
     
     <!--JS FILES-->
     <script src="{% static 'blog/js/jquery-3.4.1.min.js' %}"></script>
     <script src="{% static 'blog/js/popper.min.js' %}"></script>
     <script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
-    
     <!--FONTAWESOME-->
     <script src="{% static 'blog/js/fontawesome.all.min.js' %}"></script>
 </body>
